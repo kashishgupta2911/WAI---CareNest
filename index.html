@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareNest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // Light theme
+              'brand-lightest': '#f0f0fc',
+              'brand-light': '#c5c5f5',
+              'brand-medium-light': '#9a9aee',
+              'brand-medium': '#6f6fe5',
+              'brand-primary': '#4343d7',
+              'brand-dark': '#23239f',
+              'brand-darkest': '#0e0e55',
+              // Dark theme specific
+              'dark-bg': '#08083a',
+              'dark-text': '#eeeefc',
+              'dark-primary': '#2727a5',
+              'dark-secondary': '#9b9bee',
+              'dark-accent': '#c7c7f5',
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+<body class="bg-brand-lightest dark:bg-dark-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
